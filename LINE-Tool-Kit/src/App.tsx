@@ -2,7 +2,7 @@ import liff from "@line/liff";
 import { useState, useEffect, useRef } from "react";
 
 function App() {
-  const liffId = "1661226722-beANnaeG";
+  const liffId = "2000072918-8MrOwvZE";
   let [Status, setStatus] = useState("None");
   let msgRef = useRef<HTMLInputElement>(null);
 
