@@ -38,6 +38,7 @@ function App() {
         Status : {Status} <br />
         <input type="text" placeholder="text" ref={msgRef} />
         <button onClick={SendMsg}>Send</button>
+        <p>by ame</p>
       </div>
     </>
   );
