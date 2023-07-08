@@ -6,7 +6,4 @@ const app = new Hono();
 
 app.use('/', serveStatic({ root: './dist/' }));
 
-app.use('/favicon.ico', serveStatic({ path: './dist/vite.svg' }));
-app.use('/robots.txt', serveStatic({ path: './dist/robots.txt' }));
-
 serve(app.fetch.bind(app));
