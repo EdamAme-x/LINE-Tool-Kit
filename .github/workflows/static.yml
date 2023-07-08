@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           # Upload specific directory
-          path: './line-tool-kit/dist'
+          path: './LINE-Tool-Kit/dist'
           name: 'dist'
       - name: Deploy to GitHub Pages
         id: deployment
