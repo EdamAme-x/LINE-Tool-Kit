@@ -9,6 +9,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Configure Pages
         uses: crazy-max/ghaction-github-pages@v2
+        with:
+          build_dir: LINE-Tool-Kit/dist
       - name: Build
         run: |
           mkdir -p LINE-Tool-Kit/dist
