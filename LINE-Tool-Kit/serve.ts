@@ -4,8 +4,8 @@ import { serveStatic } from 'https://deno.land/x/hono/middleware.ts';
 
 const app = new Hono();
 
-app.use('/*', serveStatic({ root: './dist' }));
+app.use('/', serveStatic({ root: './dist' }));
 app.use('/favicon.ico', serveStatic({ path: './public/vite.ico' }));
-app.use('/', serveStatic({ path: './dist/index.html' }));
+app.use('/robots.txt', serveStatic({ path: './dist/robots.txt' }));
 
 serve(app.fetch.bind(app));
