@@ -6,6 +6,6 @@ const app = new Hono()
 
 app.use('/*', serveStatic({ root: './dist' }))
 app.use('/favicon.ico', serveStatic({ path: './public/vite.ico' }))
-app.get('/', serveStatic({ path: './static/index.html' }))
+app.get('/', serveStatic({ path: './dist/index.html' }))
 
 serve(app.fetch)
